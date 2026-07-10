@@ -87,7 +87,9 @@
         { "@type": "ListItem", "position": 15, "name": "Messi Birthday Goals", "url": "https://ryucel.github.io/Messi_BirthdayGoals" },
         { "@type": "ListItem", "position": 16, "name": "Yunanca Anki v2", "url": "https://ryucel.github.io/YunancaAnki_v2/" },
         { "@type": "ListItem", "position": 17, "name": "KKTC Purchasing Power", "url": "https://ryucel.github.io/KKTC_purchasingPower/" },
-        { "@type": "ListItem", "position": 18, "name": "TUFE Hesaplama v3", "url": "https://ryucel.github.io/TUFE_hesaplama_v3/" }
+        { "@type": "ListItem", "position": 18, "name": "TUFE Hesaplama v3", "url": "https://ryucel.github.io/TUFE_hesaplama_v3/" },
+        { "@type": "ListItem", "position": 19, "name": "KKTC Enflasyon Takip — TÜFE Dashboard", "url": "https://ryucel.github.io/kktc_tufe/" },
+        { "@type": "ListItem", "position": 20, "name": "KKTC Reel Asgari Ücret 1983–2026", "url": "https://ryucel.github.io/Reel_asgari_ucret_KKTC/" }
       ]
     }
   ]
@@ -391,7 +393,7 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;
         <p>From CPI calculators to public personnel tracking — every project is built with one goal: <strong>make data speak human.</strong></p>
       </div>
       <div class="about-stats">
-        <div class="about-stat reveal"><div class="about-stat-value" data-count="18">0</div><div class="about-stat-label">Projects shipped</div></div>
+        <div class="about-stat reveal"><div class="about-stat-value" data-count="20">0</div><div class="about-stat-label">Projects shipped</div></div>
         <div class="about-stat reveal"><div class="about-stat-value" data-count="7">0</div><div class="about-stat-label">Core technologies</div></div>
         <div class="about-stat reveal"><div class="about-stat-value" data-count="2026">0</div><div class="about-stat-label">Active year</div></div>
         <div class="about-stat reveal"><div class="about-stat-value">∞</div><div class="about-stat-label">Datasets analyzed</div></div>
@@ -422,6 +424,8 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;
     <!-- GEO / no-JS fallback: crawlable project list -->
     <noscript>
       <ul>
+        <li><a href="https://ryucel.github.io/Reel_asgari_ucret_KKTC/">KKTC Reel Asgari Ücret 1983–2026</a> — Inflation-adjusted minimum wage tracker with government and party-level scorecards.</li>
+        <li><a href="https://ryucel.github.io/kktc_tufe/">KKTC Enflasyon Takip</a> — Automated TÜFE (CPI) inflation dashboard.</li>
         <li><a href="https://kktc-tufe-fiyatlar.vercel.app">TRNC CPI Analysis Tool</a> — Northern Cyprus Consumer Price Index tracking and visualization.</li>
         <li><a href="https://turk-sen.com">Türk-Sen Federation Website</a> — Corporate website for the Cyprus Turkish Trade Unions Federation.</li>
         <li><a href="https://teklif-ai.vercel.app">Teklif AI</a> — AI-powered proposal and quote generation app.</li>
@@ -512,7 +516,9 @@ window.addEventListener('scroll',()=>{
 // live:null  -> no Live button, Source becomes primary
 // noframe:true -> static monogram preview instead of iframe (for sites that block embedding)
 const projects=[
-  {title:'TRNC CPI Analysis Tool',desc:'Newest release — tracking and visualizing price changes within the Northern Cyprus Consumer Price Index, item by item.',tags:['TypeScript','Data Viz','Economics'],cat:'data',catName:'Data Viz',isNew:true,live:'https://kktc-tufe-fiyatlar.vercel.app',code:'https://github.com/RYucel/KKTC_TUFE_Fiyatlar',preview:'https://kktc-tufe-fiyatlar.vercel.app'},
+  {title:'KKTC Reel Asgari Ücret · 1983–2026',desc:'Inflation-adjusted minimum wage tracker spanning KKTC\'s entire history — real purchasing power by month, plus a government-by-government and party-level scorecard (CTP, UBP, DP).',tags:['JavaScript','Econometrics','Civic Tech'],cat:'data',catName:'Data Viz',isNew:true,live:'https://ryucel.github.io/Reel_asgari_ucret_KKTC/',code:'https://github.com/RYucel/Reel_asgari_ucret_KKTC',preview:'https://ryucel.github.io/Reel_asgari_ucret_KKTC/'},
+  {title:'KKTC Enflasyon Takip — TÜFE Dashboard',desc:'Live inflation dashboard auto-compiled from official TRNC Statistics Institute CPI bulletins — monthly, year-to-date and year-over-year change, refreshed automatically via GitHub Actions.',tags:['JavaScript','Data Viz','Automation'],cat:'data',catName:'Data Viz',isNew:true,live:'https://ryucel.github.io/kktc_tufe/',code:'https://github.com/RYucel/kktc_tufe',preview:'https://ryucel.github.io/kktc_tufe/'},
+  {title:'TRNC CPI Analysis Tool',desc:'Tracking and visualizing price changes within the Northern Cyprus Consumer Price Index, item by item.',tags:['TypeScript','Data Viz','Economics'],cat:'data',catName:'Data Viz',isNew:true,live:'https://kktc-tufe-fiyatlar.vercel.app',code:'https://github.com/RYucel/KKTC_TUFE_Fiyatlar',preview:'https://kktc-tufe-fiyatlar.vercel.app'},
   {title:'Türk-Sen Federation Website',desc:'Full corporate website designed and built for Türk-Sen — the Cyprus Turkish Trade Unions Federation. News architecture, press releases, responsive design.',tags:['Web Design','Client Work','CMS'],cat:'web',catName:'Client Work',isNew:true,live:'https://turk-sen.com',code:null,preview:null,noframe:true,monogram:'TS'},
   {title:'Teklif AI',desc:'AI-powered proposal and quote generation app — turns project requirements into structured, client-ready offers.',tags:['TypeScript','AI','SaaS'],cat:'ai',catName:'AI',isNew:true,live:'https://teklif-ai.vercel.app',code:'https://github.com/RYucel/teklif-ai',preview:'https://teklif-ai.vercel.app'},
   {title:'Cost of Living Calculator',desc:'Interactive application calculating the cost of living index (Hayat Pahalılığı) based on the KKTC CPI basket.',tags:['JavaScript','Economics'],cat:'tools',catName:'Tool',live:'https://ryucel.github.io/HP_hesaplama',code:'https://github.com/RYucel/HP_hesaplama',preview:'https://ryucel.github.io/HP_hesaplama'},
